@@ -78,7 +78,6 @@ extension SocketRoomService {
     private func receiveMessage() {
 
         webSocketTask.receive { (result) in
-            debugPrint("📩")
             switch result {
             case .failure(_):
                 break
