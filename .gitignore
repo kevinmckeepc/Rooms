@@ -1,0 +1,10 @@
+# Xcode gitignore
+
+Pods
+.DS_Store
+build
+*.xcuserdata
+**/xcuserdata/
+*.swp
+tmp
+DerivedData

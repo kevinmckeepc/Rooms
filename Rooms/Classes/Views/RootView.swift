@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  RootView.swift
 //  Rooms
 //
 //  Created by Kevin McKee on 5/20/20.
@@ -7,15 +7,16 @@
 //
 
 import SwiftUI
+import RoomKit
 
-struct ContentView: View {
+struct RootView: View {
     var body: some View {
-        Text("Hello, World!")
+        RoomView().environmentObject(Rooms.room)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct RootView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        RootView()
     }
 }

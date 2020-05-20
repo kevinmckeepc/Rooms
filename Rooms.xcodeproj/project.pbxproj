@@ -9,25 +9,89 @@
 /* Begin PBXBuildFile section */
 		12624BBC2475B83900736A63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12624BBB2475B83900736A63 /* AppDelegate.swift */; };
 		12624BBE2475B83900736A63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12624BBD2475B83900736A63 /* SceneDelegate.swift */; };
-		12624BC02475B83900736A63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12624BBF2475B83900736A63 /* ContentView.swift */; };
+		12624BC02475B83900736A63 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12624BBF2475B83900736A63 /* RootView.swift */; };
 		12624BC22475B83A00736A63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12624BC12475B83A00736A63 /* Assets.xcassets */; };
 		12624BC52475B83A00736A63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12624BC42475B83A00736A63 /* Preview Assets.xcassets */; };
 		12624BC82475B83A00736A63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12624BC62475B83A00736A63 /* LaunchScreen.storyboard */; };
+		12624BDA2475B87800736A63 /* RoomKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 12624BD82475B87800736A63 /* RoomKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12624BDD2475B87800736A63 /* RoomKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12624BD62475B87800736A63 /* RoomKit.framework */; };
+		12624BDE2475B87800736A63 /* RoomKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 12624BD62475B87800736A63 /* RoomKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		12624BE82475B8A600736A63 /* SocketRoomService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12624BE32475B8A600736A63 /* SocketRoomService.swift */; };
+		12624BE92475B8A600736A63 /* Rooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12624BE42475B8A600736A63 /* Rooms.swift */; };
+		12624BEA2475B8A600736A63 /* Participant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12624BE52475B8A600736A63 /* Participant.swift */; };
+		12624BEB2475B8A600736A63 /* RoomService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12624BE62475B8A600736A63 /* RoomService.swift */; };
+		12624BEC2475B8A600736A63 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12624BE72475B8A600736A63 /* Room.swift */; };
+		12624BF72475B8FE00736A63 /* ParticipantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12624BF02475B8FE00736A63 /* ParticipantView.swift */; };
+		12624BF82475B8FE00736A63 /* JoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12624BF12475B8FE00736A63 /* JoinView.swift */; };
+		12624BF92475B8FE00736A63 /* RoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12624BF22475B8FE00736A63 /* RoomView.swift */; };
+		12624BFA2475B8FE00736A63 /* ThemeStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12624BF32475B8FE00736A63 /* ThemeStyle.swift */; };
+		12624BFB2475B8FE00736A63 /* KeyboardResponderViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12624BF42475B8FE00736A63 /* KeyboardResponderViewModifier.swift */; };
+		12624BFC2475B8FE00736A63 /* RoundThemedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12624BF52475B8FE00736A63 /* RoundThemedButtonStyle.swift */; };
+		12624BFD2475B8FE00736A63 /* ThemedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12624BF62475B8FE00736A63 /* ThemedButtonStyle.swift */; };
+		12624C012475C49E00736A63 /* URLSessionWebSocketTask+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12624C002475C49E00736A63 /* URLSessionWebSocketTask+Extensions.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12624BDB2475B87800736A63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12624BB02475B83900736A63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12624BD52475B87800736A63;
+			remoteInfo = RoomKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		12624BE22475B87800736A63 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				12624BDE2475B87800736A63 /* RoomKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		12624BB82475B83900736A63 /* Rooms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rooms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12624BBB2475B83900736A63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12624BBD2475B83900736A63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		12624BBF2475B83900736A63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		12624BBF2475B83900736A63 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		12624BC12475B83A00736A63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12624BC42475B83A00736A63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		12624BC72475B83A00736A63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12624BC92475B83A00736A63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12624BD62475B87800736A63 /* RoomKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RoomKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12624BD82475B87800736A63 /* RoomKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoomKit.h; sourceTree = "<group>"; };
+		12624BD92475B87800736A63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12624BE32475B8A600736A63 /* SocketRoomService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketRoomService.swift; sourceTree = "<group>"; };
+		12624BE42475B8A600736A63 /* Rooms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rooms.swift; sourceTree = "<group>"; };
+		12624BE52475B8A600736A63 /* Participant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Participant.swift; sourceTree = "<group>"; };
+		12624BE62475B8A600736A63 /* RoomService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomService.swift; sourceTree = "<group>"; };
+		12624BE72475B8A600736A63 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		12624BF02475B8FE00736A63 /* ParticipantView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticipantView.swift; sourceTree = "<group>"; };
+		12624BF12475B8FE00736A63 /* JoinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinView.swift; sourceTree = "<group>"; };
+		12624BF22475B8FE00736A63 /* RoomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomView.swift; sourceTree = "<group>"; };
+		12624BF32475B8FE00736A63 /* ThemeStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeStyle.swift; sourceTree = "<group>"; };
+		12624BF42475B8FE00736A63 /* KeyboardResponderViewModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardResponderViewModifier.swift; sourceTree = "<group>"; };
+		12624BF52475B8FE00736A63 /* RoundThemedButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundThemedButtonStyle.swift; sourceTree = "<group>"; };
+		12624BF62475B8FE00736A63 /* ThemedButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemedButtonStyle.swift; sourceTree = "<group>"; };
+		12624C002475C49E00736A63 /* URLSessionWebSocketTask+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSessionWebSocketTask+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		12624BB52475B83900736A63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12624BDD2475B87800736A63 /* RoomKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12624BD32475B87800736A63 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				12624BBA2475B83900736A63 /* Rooms */,
+				12624BD72475B87800736A63 /* RoomKit */,
 				12624BB92475B83900736A63 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				12624BB82475B83900736A63 /* Rooms.app */,
+				12624BD62475B87800736A63 /* RoomKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,11 +122,9 @@
 		12624BBA2475B83900736A63 /* Rooms */ = {
 			isa = PBXGroup;
 			children = (
-				12624BBB2475B83900736A63 /* AppDelegate.swift */,
-				12624BBD2475B83900736A63 /* SceneDelegate.swift */,
-				12624BBF2475B83900736A63 /* ContentView.swift */,
+				12624BCF2475B84500736A63 /* Classes */,
+				12624BD02475B85100736A63 /* Storyboards */,
 				12624BC12475B83A00736A63 /* Assets.xcassets */,
-				12624BC62475B83A00736A63 /* LaunchScreen.storyboard */,
 				12624BC92475B83A00736A63 /* Info.plist */,
 				12624BC32475B83A00736A63 /* Preview Content */,
 			);
@@ -75,7 +139,98 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		12624BCF2475B84500736A63 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				12624BBB2475B83900736A63 /* AppDelegate.swift */,
+				12624BBD2475B83900736A63 /* SceneDelegate.swift */,
+				12624BEE2475B8C300736A63 /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		12624BD02475B85100736A63 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				12624BC62475B83A00736A63 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		12624BD72475B87800736A63 /* RoomKit */ = {
+			isa = PBXGroup;
+			children = (
+				12624BED2475B8AC00736A63 /* Classes */,
+				12624BD82475B87800736A63 /* RoomKit.h */,
+				12624BD92475B87800736A63 /* Info.plist */,
+			);
+			path = RoomKit;
+			sourceTree = "<group>";
+		};
+		12624BED2475B8AC00736A63 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				12624BE52475B8A600736A63 /* Participant.swift */,
+				12624BE72475B8A600736A63 /* Room.swift */,
+				12624BE42475B8A600736A63 /* Rooms.swift */,
+				12624BE62475B8A600736A63 /* RoomService.swift */,
+				12624BE32475B8A600736A63 /* SocketRoomService.swift */,
+				12624C002475C49E00736A63 /* URLSessionWebSocketTask+Extensions.swift */,
+				12624BEF2475B8EA00736A63 /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		12624BEE2475B8C300736A63 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				12624BBF2475B83900736A63 /* RootView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		12624BEF2475B8EA00736A63 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				12624BF12475B8FE00736A63 /* JoinView.swift */,
+				12624BF02475B8FE00736A63 /* ParticipantView.swift */,
+				12624BF22475B8FE00736A63 /* RoomView.swift */,
+				12624BFE2475B90500736A63 /* Modifiers */,
+				12624BFF2475B91200736A63 /* Styles */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		12624BFE2475B90500736A63 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				12624BF42475B8FE00736A63 /* KeyboardResponderViewModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		12624BFF2475B91200736A63 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				12624BF52475B8FE00736A63 /* RoundThemedButtonStyle.swift */,
+				12624BF62475B8FE00736A63 /* ThemedButtonStyle.swift */,
+				12624BF32475B8FE00736A63 /* ThemeStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		12624BD12475B87800736A63 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12624BDA2475B87800736A63 /* RoomKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		12624BB72475B83900736A63 /* Rooms */ = {
@@ -85,15 +240,35 @@
 				12624BB42475B83900736A63 /* Sources */,
 				12624BB52475B83900736A63 /* Frameworks */,
 				12624BB62475B83900736A63 /* Resources */,
+				12624BE22475B87800736A63 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				12624BDC2475B87800736A63 /* PBXTargetDependency */,
 			);
 			name = Rooms;
 			productName = Rooms;
 			productReference = 12624BB82475B83900736A63 /* Rooms.app */;
 			productType = "com.apple.product-type.application";
+		};
+		12624BD52475B87800736A63 /* RoomKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12624BDF2475B87800736A63 /* Build configuration list for PBXNativeTarget "RoomKit" */;
+			buildPhases = (
+				12624BD12475B87800736A63 /* Headers */,
+				12624BD22475B87800736A63 /* Sources */,
+				12624BD32475B87800736A63 /* Frameworks */,
+				12624BD42475B87800736A63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoomKit;
+			productName = RoomKit;
+			productReference = 12624BD62475B87800736A63 /* RoomKit.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -107,6 +282,10 @@
 				TargetAttributes = {
 					12624BB72475B83900736A63 = {
 						CreatedOnToolsVersion = 11.4.1;
+					};
+					12624BD52475B87800736A63 = {
+						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -124,6 +303,7 @@
 			projectRoot = "";
 			targets = (
 				12624BB72475B83900736A63 /* Rooms */,
+				12624BD52475B87800736A63 /* RoomKit */,
 			);
 		};
 /* End PBXProject section */
@@ -139,6 +319,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		12624BD42475B87800736A63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -148,11 +335,39 @@
 			files = (
 				12624BBC2475B83900736A63 /* AppDelegate.swift in Sources */,
 				12624BBE2475B83900736A63 /* SceneDelegate.swift in Sources */,
-				12624BC02475B83900736A63 /* ContentView.swift in Sources */,
+				12624BC02475B83900736A63 /* RootView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12624BD22475B87800736A63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12624BFC2475B8FE00736A63 /* RoundThemedButtonStyle.swift in Sources */,
+				12624BF72475B8FE00736A63 /* ParticipantView.swift in Sources */,
+				12624BF92475B8FE00736A63 /* RoomView.swift in Sources */,
+				12624BE92475B8A600736A63 /* Rooms.swift in Sources */,
+				12624BFB2475B8FE00736A63 /* KeyboardResponderViewModifier.swift in Sources */,
+				12624BE82475B8A600736A63 /* SocketRoomService.swift in Sources */,
+				12624BFA2475B8FE00736A63 /* ThemeStyle.swift in Sources */,
+				12624BEB2475B8A600736A63 /* RoomService.swift in Sources */,
+				12624BEA2475B8A600736A63 /* Participant.swift in Sources */,
+				12624C012475C49E00736A63 /* URLSessionWebSocketTask+Extensions.swift in Sources */,
+				12624BF82475B8FE00736A63 /* JoinView.swift in Sources */,
+				12624BFD2475B8FE00736A63 /* ThemedButtonStyle.swift in Sources */,
+				12624BEC2475B8A600736A63 /* Room.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12624BDC2475B87800736A63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12624BD52475B87800736A63 /* RoomKit */;
+			targetProxy = 12624BDB2475B87800736A63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		12624BC62475B83A00736A63 /* LaunchScreen.storyboard */ = {
@@ -283,6 +498,7 @@
 		12624BCD2475B83A00736A63 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Rooms/Preview Content\"";
@@ -303,6 +519,7 @@
 		12624BCE2475B83A00736A63 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Rooms/Preview Content\"";
@@ -317,6 +534,63 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		12624BE02475B87800736A63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Q69JMRS3FN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RoomKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.procore.RoomKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		12624BE12475B87800736A63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Q69JMRS3FN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RoomKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.procore.RoomKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -337,6 +611,15 @@
 			buildConfigurations = (
 				12624BCD2475B83A00736A63 /* Debug */,
 				12624BCE2475B83A00736A63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12624BDF2475B87800736A63 /* Build configuration list for PBXNativeTarget "RoomKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12624BE02475B87800736A63 /* Debug */,
+				12624BE12475B87800736A63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
